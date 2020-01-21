@@ -2,10 +2,9 @@ import { AuthenticationContext, adalFetch, withAdalLogin } from 'react-adal';
  
 const appId = 'e2982088-acb0-4c80-abdf-ec9afbd6486b';
 export const endpoint = `https://login.microsoftonline.com/` + appId + `/`;
-//export const endpoint = `https://login.microsoftonline.com/` + appId + `/`;
 
 export const adalConfig = {
-  tenant: 'login.microsoftonline.com',
+  tenant: 'Vnpoc2.onmicrosoft.com',
   clientId: appId,
   endpoints: {
     api: appId,

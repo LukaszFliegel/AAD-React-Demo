@@ -8,7 +8,7 @@ import Contacts from './components/contacts';
       }
 
       componentDidMount() {
-        fetch('http://jsonplaceholder.typicode.com/users')
+        fetch('https://localhost:44391/manasymbols')
         .then(res => res.json())
         .then((data) => {
           this.setState({ contacts: data })
