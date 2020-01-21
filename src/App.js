@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Contacts from './components/contacts';
+import { adalApiFetch  } from './adalConfig';
 
     class App extends Component {
 
@@ -8,7 +9,7 @@ import Contacts from './components/contacts';
       }
 
       componentDidMount() {
-        fetch('https://localhost:44391/manasymbols')
+        adalApiFetch(fetch, 'https://localhost:44391/manasymbols', {})
         .then(res => res.json())
         .then((data) => {
           this.setState({ contacts: data })
